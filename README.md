@@ -19,11 +19,11 @@ Well, **NBStoYAML** can help you do that. <br />
 1. Download [Open NBS](https://opennbs.org) and make/download a song.
     * You can also download [test.nbs](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/test.yml) from this repository.
 
-1. Download *NBStoYAML.exe* from the latest release.
-    * If you are not on Windows, clone this repository and compile *NBStoYAML.exe* on [Visual Studio 2019](https://visualstudio.microsoft.com) or any other IDE of your choice.
+1. Download `NBStoYAML.exe` from the [latest release](https://github.com/CreepahGIT/NBStoYAML/releases/latest).
+    * If you are not on Windows, clone this repository and compile `NBStoYAML.exe` on [Visual Studio 2019](https://visualstudio.microsoft.com) or any other IDE of your choice.
 1. Open command prompt/terminal.
     * If you are on Windows, press `WIN+R`, type `cmd` and press enter.
-1. Run *NBStoYAML.exe* from command line.
+1. Run `NBStoYAML.exe` from command line.
     * First argument is the path to Note Block Song (`.nbs`) file to convert.
     * Second argument is the path to YAML (`.yml`) file to save to.
 1. You should see a YAML (`.yml`) file containing some data. You now have two options:
