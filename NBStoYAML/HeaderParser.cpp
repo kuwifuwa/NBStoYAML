@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "HeaderParser.h"
 #include "ParseBytes.h"
 #include <cassert>

@@ -1,4 +1,3 @@
-#include "pch.h"
 #include <cinttypes>
 
 /* Parsing functions reverses byte order: 0B 00 00 00 -> 00 00 00 0B -> 11

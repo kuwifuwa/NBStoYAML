@@ -1,4 +1,3 @@
-#include "pch.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -17,8 +16,8 @@ inline void assert(bool condition, const char* message) {
 void writeOutput(std::ofstream& outs, const HeaderParser& head, const NoteBlocksParser& nb) {
 	outs << Constants::yamlListName << ":\n";
 	outs << "- " << +head.version << '\n';
-	outs << "- \"" << +head.vanillaInstrumentCount << dsep << head.length << dsep << head.layerCount <<
-		dsep << head.tempo << dsep << head.isLooped << dsep << +head.maxLoopCount << dsep << head.loopStartTick << "\"";
+	outs << "- \"" << +head.vanillaInstrumentCount << dsep << head.tempo << dsep <<
+		head.isLooped << dsep << +head.maxLoopCount << dsep << head.loopStartTick << "\"";
 	for (auto nb : nb.noteblocks) {
 		outs << "\n- \"" << nb.waitTicks << dsep << +nb.instrument << dsep << +nb.key << dsep << +nb.velocity << '"';
 	}
