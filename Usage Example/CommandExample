@@ -1,0 +1,33 @@
+command loadsong <string> <string>:
+    usage: /loadsong <songname> <songpath>
+    # e.g. /loadsong MySong plugins/Skript/song/MySong.yml
+    permission: skript.nbsyaml
+    trigger:
+        set {_result} to NBSYAML_loadSong(arg-1, arg-2)
+        send "&aLoad Result: &f%{_result}%" to executor
+
+command playsong <string>:
+    usage: /playsong <songname>
+    # e.g. /playsong MySong
+    permission: skript.nbsyaml
+    executable by: players
+    trigger:
+        if {-NBSYAML_CONNECTION::%{-songConnection::%executor's uuid%}%} is set:
+            send "&cPlease stop the current song before playing another one &7(/stopsong)" to executor
+            exit trigger
+        set {_error} to NBSYAML_playSong(arg-1, executor, {_}, "-songConnection::%executor's uuid%")
+        if {_error} is set:
+            send "&cFailed to play song %arg-1%: &f%{_error}%" to executor
+            exit trigger
+        send "&aPlaying song %arg-1%" to executor
+
+command stopsong:
+    permission: skript.nbsyaml
+    executable by: players
+    trigger:
+        if {-NBSYAML_CONNECTION::%{-songConnection::%executor's uuid%}%} is not set:
+            send "&cNo songs are currently playing" to executor
+            exit trigger
+        delete {-NBSYAML_CONNECTION::%{-songConnection::%executor's uuid%}%}
+        delete {-songConnection::%executor's uuid%}
+        send "&aStopped playing current song" to executor
