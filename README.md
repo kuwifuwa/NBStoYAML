@@ -27,10 +27,10 @@ Well, **NBStoYAML** can help you do that. <br />
     * First argument is the path to Note Block Song (`.nbs`) file to convert.
     * Second argument is the path to YAML (`.yml`) file to save to.
 1. You should see a YAML (`.yml`) file containing some data. You now have two options:
-    * Download [ExampleParser.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/ExampleParser.sk) from this repository.
+    * Download [NBSConnectionPlayer.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/NBSConnectionPlayer.sk) from this repository.
     * Write your own parser with Skript to play the song.
 1. Using Skript and the parser you acquired from the last step, play your song.
-    * If you are using [ExampleParser.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/ExampleParser.sk), you can load songs by calling `NBSYAML_loadSong()` or executing `/loadsong` and play songs by calling `NBSYAML_playSong()` or executing `/playsong`. For a better understanding of the parser, please try to read the script. 
+    * If you are using [NBSConnectionPlayer.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/NBSConnectionPlayer.sk), you can load songs by calling `NBSYAML_loadSong()` or executing `/loadsong` and play songs by calling `NBSYAML_playSong()` or executing `/playsong`. For a better understanding of the parser, please try to read the script. 
 <br />
   
 **Note:** *NBStoYAML* may be far less efficient than using an addon to read from Note Block Song (`.nbs`) files directly, but in the case that those addons are not available, *NBStoYAML* can be used.<br />
