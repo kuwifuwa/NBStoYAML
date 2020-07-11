@@ -85,7 +85,7 @@ function NBSYAML_stopSong(connectionId: string)
   
 ## Examples
 
-**Some commands utilizing the functions:**
+**Some commands utilizing the functions:** [CommandExample.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/CommandExample)
 ```
 command loadsong <string> <string>:
     usage: /loadsong <songname> <songpath>
