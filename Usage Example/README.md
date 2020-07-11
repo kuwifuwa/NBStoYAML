@@ -125,7 +125,6 @@ command stopsong:
   
 **A small snippet playing and stopping a song:**
 ```
-
 # Play MySong to event-player
 set {_error} to NBSYAML_playSong("MySong", event-player, {_}, "-MyConnection")
 if {_error} is set:
