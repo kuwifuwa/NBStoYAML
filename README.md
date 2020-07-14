@@ -26,6 +26,7 @@ Well, **NBStoYAML** can help you do that. <br />
 1. Run `NBStoYAML.exe` from command line.
     * First argument is the path to Note Block Song (`.nbs`) file to convert.
     * Second argument is the path to YAML (`.yml`) file to save to.
+    * If you get a window saying something went wrong while running this, please check that you are using latest version of [Open NBS](https://opennbs.org), and the song file is the same version as *NBStoYAML.exe* was compiled for from [Open NBS Specification](https://opennbs.org/nbs). (Current version: 4.0)
 1. You should see a YAML (`.yml`) file containing some data. You now have two options:
     * Download [NBSConnectionPlayer.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/NBSConnectionPlayer.sk) from this repository.
     * Write your own parser with Skript to play the song.
