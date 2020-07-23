@@ -28,6 +28,6 @@ command stopsong:
         if {-NBSYAML_CONNECTION::%{-songConnection::%executor's uuid%}%} is not set:
             send "&cNo songs are currently playing" to executor
             exit trigger
-        delete {-NBSYAML_CONNECTION::%{-songConnection::%executor's uuid%}%}
+        NBSYAML_stopSong({-songConnection::%executor's uuid%})
         delete {-songConnection::%executor's uuid%}
         send "&aStopped playing current song" to executor
