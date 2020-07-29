@@ -5,7 +5,7 @@
 **DELIM:** The delimiter/separator for generated YAML data. Don't change this unless you know what you're doing. <br />
 Default: `","` (e.g. `1,2,3`) <br />
   
-**SUPPORTED_VERSIONS:** The versions supported by this parser/player script, separated by ` or `. Don't change this unless you know what you're doing. <br />
+**SUPPORTED_VERSIONS:** The NBS file format versions supported by this parser/player script, separated by ` or `. Don't change this unless you know what you're doing. <br />
 Default: `4` <br />
   
 **INSTRUMENT_SOUND_PREFIX:** The prefix for instrument sounds. <br />
