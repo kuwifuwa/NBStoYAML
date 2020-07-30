@@ -14,6 +14,7 @@ Well, **NBStoYAML** can help you do that. <br />
 **How NBStoYAML works:**
 1. Note Block Song (`.nbs`) files are converted to YAML (`.yml`) files with a skript-parsable format.
 1. Using Skript, these files are read and played in-game to play a song.<br />
+1. Read [Explanation.md](https://github.com/CreepahGIT/NBStoYAML/blob/master/Explanation.md) for an in-depth explanation.
 
 **How to use NBStoYAML:**
 1. Download [Open NBS](https://opennbs.org) and make/download a song.
