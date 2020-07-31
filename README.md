@@ -39,4 +39,8 @@ Well, **NBStoYAML** can help you do that. <br />
 **Testing Server:** For testing purposes and to see how well this works with a normal server, you can join IP `mc.cubedcraft.com` and execute `/join Porama6400`. Wait for the server to start, then execute `/playsong Megalovania` to play a song.
 <br />
   
-**Default Player:** A default player, [NBSConnectionPlayer.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/NBSConnectionPlayer.sk) is provided. For more information and examples, please read [Usage Example/README.md](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/README.md).
+**Default Player:** A default song player, [NBSConnectionPlayer.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/NBSConnectionPlayer.sk) is provided. For more information and examples, please read [Usage Example/README.md](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/README.md).
+
+**Variable Storage Efficiency Note:** Songs should be loaded in unsaved variables. Loading in variables that are saved to database can severely effect database efficiency. To use unsaved variables, modify your skript config's last database:<br>
+`pattern: .*` to `pattern: (?!-).*`<br>
+This will make sure variables starting with a hyphen `-` do not get saved. E.g. `{-var}`, `{-NBSYAML_SONG::*}`
