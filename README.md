@@ -35,9 +35,6 @@ Well, **NBStoYAML** can help you do that. <br />
     * If you are using [NBSConnectionPlayer.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/NBSConnectionPlayer.sk), you can load songs by calling `NBSYAML_loadSong()` or executing `/loadsong` and play songs by calling `NBSYAML_playSong()` or executing `/playsong`. For a better understanding of the parser, please try to read the script.<br />
   
 **Note:** **NBStoYAML** may be far less efficient than using an addon to read from Note Block Song (`.nbs`) files directly, but in the case that those addons are not available, **NBStoYAML** can be used.<br />
-
-**Testing Server:** For testing purposes and to see how well this works with a normal server, you can join IP `mc.cubedcraft.com` and execute `/join Porama6400`. Wait for the server to start, then execute `/playsong Megalovania` to play a song.
-<br />
   
 **Default Player:** A default song player, [NBSConnectionPlayer.sk](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/NBSConnectionPlayer.sk) is provided. For more information and examples, please read [Usage Example/README.md](https://github.com/CreepahGIT/NBStoYAML/blob/master/Usage%20Example/README.md).
 
